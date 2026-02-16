@@ -134,4 +134,55 @@ nav a {
   color: var(--white);
   text-align: center;
   padding: 15px;
+.mobile-call {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #f4c430;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  z-index: 1000;
 }
+
+.mobile-call a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-call {
+    display: block;
+  }
+}
+
+.trust {
+  background: #e9f2ea;
+  padding: 30px 0;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.map-section {
+  margin: 0;
+}
+
