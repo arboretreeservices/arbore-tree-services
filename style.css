@@ -1,105 +1,60 @@
 :root {
-  --primary: #0f2f23;
-  --accent: #d4af6a;
-  --dark: #0b1d16;
-  --light: #ffffff;
+  --brand-primary: #2a5d34;
+  --brand-secondary: #7bbf6a;
+  --accent: #f2c94c;
+  --text-dark: #222222;
+  --text-light: #ffffff;
+  --bg-light: #f9f9f9;
 }
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f7f7f7;
-  color: var(--dark);
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: var(--text-dark);
 }
 
-/* HEADER / HERO */
-header {
-  background: var(--primary);
-  color: white;
+header.header {
+  background: var(--brand-primary);
+  color: var(--text-light);
+  padding: 15px 0;
+}
+header .logo {
+  margin-left: 20px;
+}
+header .nav a {
+  margin: 0 15px;
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.hero {
+  background: var(--brand-secondary);
   text-align: center;
-  padding: 90px 20px;
+  padding: 80px 0;
+  color: var(--text-light);
 }
 
-header img {
-  max-width: 180px;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-header p {
-  margin-top: 10px;
-  font-weight: 300;
-  opacity: 0.95;
-}
-
-/* BUTTONS */
-.btn {
+.btn-primary {
   background: var(--accent);
-  color: var(--dark);
-  padding: 15px 32px;
-  border-radius: 30px;
+  padding: 10px 20px;
+  color: var(--text-dark);
   text-decoration: none;
-  font-weight: 600;
-  display: inline-block;
-  margin-top: 25px;
+  font-weight: bold;
 }
 
-.btn:hover {
-  background: #c2a153;
+.container {
+  padding: 40px 20px;
 }
 
-/* SECTIONS */
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 70px 20px;
-}
-
-section h2 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-/* SERVICES & REVIEWS */
-.services-grid,
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.card {
-  background: white;
-  padding: 28px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+.services, .about, .contact, .testimonials {
+  background: var(--bg-light);
+  margin-top: 30px;
   text-align: center;
 }
 
-.card h3 {
-  margin-top: 10px;
-}
-
-/* STARS */
-.stars {
-  color: #f5c542;
-  font-size: 1.2rem;
-}
-
-/* FOOTER */
-footer {
-  background: var(--dark);
-  color: white;
+.footer {
+  background: var(--brand-primary);
+  color: var(--text-light);
+  padding: 15px;
   text-align: center;
-  padding: 45px 20px;
-}
-
-footer a {
-  color: var(--accent);
-  text-decoration: none;
 }
